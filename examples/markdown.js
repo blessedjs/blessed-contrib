@@ -1,10 +1,12 @@
-var blessed = require('blessed')
+'use strict';
+
+var blessed = require('@blessed/neo-blessed')
   , contrib = require('../')
   , screen = blessed.screen()
   , chalk = require('chalk')
-  , markdown = contrib.markdown()
+  , markdown = contrib.markdown();
     
-screen.append(markdown)
-markdown.setOptions({ firstHeading: chalk.red.italic })
-markdown.setMarkdown('# Hello \n This is **markdown** printed in the `terminal` 11')
-screen.render()
+screen.append(markdown);
+markdown.setOptions({ firstHeading: chalk.red.italic });
+markdown.setMarkdown('# Hello \n This is **markdown** printed in the `terminal` 11');
+screen.render();

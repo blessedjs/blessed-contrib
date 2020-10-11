@@ -1,6 +1,6 @@
 {
   "name": "@blessed/blessed-contrib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Advanced widgets library for blessed",
   "main": "index.js",
   "types": "index.d.ts",

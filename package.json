@@ -1,7 +1,7 @@
 {
-  "name": "blessed-contrib",
-  "version": "4.8.20",
-  "description": "",
+  "name": "@blessed/blessed-contrib",
+  "version": "1.0.0",
+  "description": "Advanced widgets library for blessed",
   "main": "index.js",
   "types": "index.d.ts",
   "scripts": {
@@ -13,11 +13,11 @@
     "type": "git",
     "url": "https://github.com/yaronn/blessed-contrib.git"
   },
-  "author": "Yaron Naveh (yaronn01@gmail.com)",
+  "author": "Rajasegar Chandran (rajasegar.c@gmail.com)",
   "license": "MIT",
   "devDependencies": {
     "@types/blessed": "^0.1.6",
-    "blessed": "0.1.54",
+    "@terminal-junkies/neo-blessed": "^1.0.5",
     "colors": "^1.1.2",
     "eslint": "^5.11.0",
     "eslint-config-standard": "^12.0.0",

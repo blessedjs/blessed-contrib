@@ -1,8 +1,12 @@
 ## blessed-contrib
 
+![Build and Deploy](https://github.com/blessedjs/blessed-contrib/Build%20and%20Deploy/badge.svg)
+[![semantic-release](https://img.shields.io/badge/%20%20%F0%9F%93%A6%F0%9F%9A%80-semantic--release-e10079.svg)](https://github.com/semantic-release/semantic-release)
+[![npm version](http://img.shields.io/npm/v/@blessed/blessed-contrib.svg?style=flat)](https://npmjs.org/package/@blessed/blessed-contrib "View this project on npm")
+
 Build dashboards (or any other application) using ascii/ansi art and javascript.
 
-Friendly to terminals, ssh and developers. Extends [blessed](https://github.com/chjj/blessed) with custom  [drawille](https://github.com/madbence/node-drawille) and other widgets.
+Friendly to terminals, ssh and developers. Extends [blessed](https://github.com/terminal-junkies/neo-blessed) with custom  [drawille](https://github.com/madbence/node-drawille) and other widgets.
 
 You should also [check WOPR](https://github.com/yaronn/wopr): a markup for creating terminal reports, presentations and infographics.
 
@@ -23,7 +27,7 @@ Miguel Valadas ([@mvaladas](https://github.com/mvaladas))
 
 **Running the demo**
 
-    git clone https://github.com/yaronn/blessed-contrib.git
+    git clone https://github.com/blessedjs/blessed-contrib.git
     cd blessed-contrib
     npm install
     node ./examples/dashboard.js
@@ -32,15 +36,15 @@ Works on Linux, OS X and Windows. For Windows follow the [pre requisites](http:/
 
 ## Installation (to build custom projects)
 
-    npm install blessed blessed-contrib
+    npm install @terminal-junkies/neo-blessed @blessed/blessed-contrib
 
 ## Usage
 
 You can use any of the default widgets of [blessed](https://github.com/chjj/blessed) (texts, lists and etc) or the widgets added in blessed-contrib (described below). A [layout](#layouts) is optional but useful for dashboards. The widgets in blessed-contrib follow the same usage pattern:
 
 `````javascript
-   var blessed = require('blessed')
-     , contrib = require('blessed-contrib')
+   var blessed = require('@terminal-junkies/neo-blessed')
+     , contrib = require('@blessed/blessed-contrib')
      , screen = blessed.screen()
      , line = contrib.line(
          { style:
